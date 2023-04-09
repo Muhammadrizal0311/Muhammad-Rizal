@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-    --bg-primary: yellow;
+    --bg-primary: rgba(255, 255, 0, 0.135);
     --text-primary: black;
     --bg-secondary: #333;
     --text-secondary: white;
@@ -43,8 +43,21 @@ body {
     justify-content: center;
 }
 
+.col {
+    display: flex;
+    justify-content: center;
+}
+
 .flex-column {
     flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .box-shadow {
@@ -53,23 +66,128 @@ body {
     -moz-box-shadow: 1px -3px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
+.f-1em {
+    font-size: 1em;
+}
+
+.f-2em {
+    font-size: 2em;
+}
+
+.f-3em {
+    font-size: 3em;
+}
+
+.f-4em {
+    font-size: 4em;
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.gap {
+    gap: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* Card */
+
+.card1 {
+    width: 36rem;
+}
+
+.img-card1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text-card1 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 310px;
+    margin-left: 10px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+/* Thumbnail */
+.thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.img-thumbnail {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text-thumbnail {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-top: 310px;
+    margin-left: 10px;
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+}
+
 /* Navbar 1*/
 
 #header {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     position: fixed;
     z-index: 999;
 }
 
-.navbar, ul, li, a {
+.container>h4 {
+    font-size: 2em;
+}
+
+.navbar,
+ul,
+li,
+a {
     list-style-type: none;
     text-decoration: none;
-    color: black;
-    gap: 10px;
-    font-size: 10px;
+    color: var(--text-primary);
+    gap: 20px;
+    font-size: 1em;
 }
 
 .li-navbar:hover {
@@ -81,18 +199,25 @@ body {
 
 /* Container 1 */
 
+.heading-container1 {
+    color: var(--text-primary);
+
+}
+
 .container1 {
-    margin-top: 45px;
+    margin-top: 50px;
     width: 100vw;
-    height: 100vh;
-    background: url(Asset/hero4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    back
+    gap: 3em;
 }
 
 .img-slide-show {
-    width: 100%;
-    height: 300px;
-    opacity: 50%;
+    width: 30em;
+    border-radius: 10px;
+}
+
+/* Container 2 */
+
+#container2 > .wrapper > a:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
 }
